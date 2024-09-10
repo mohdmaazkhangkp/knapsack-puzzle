@@ -1,14 +1,11 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 @font-face {
   font-family: "balooThambi";
   src: url("/font/balooThambi.ttf");
 }
-
 
 /* CSS */
 button.button-10 {
@@ -28,7 +25,8 @@ button.button-10 {
   padding: 10px 30px;
   border-radius: 12px;
   transform-style: preserve-3d;
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    background 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 button.button-10::before {
   position: absolute;
@@ -41,7 +39,8 @@ button.button-10::before {
   bottom: 0;
   border-radius: inherit;
   transform: translate3d(0, 0.5em, -1em);
-  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+  transition: transform 150ms cubic-bezier(0, 0, 0.58, 1),
+    box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
 }
 button.button-10:hover {
   transform: translate(0, 0.25em);
@@ -57,24 +56,30 @@ button.button-10:active::before {
   transform: translate3d(0, 0, -1em);
 }
 
-.primary{
-    @apply bg-primary text-white;
+.primary {
+  @apply bg-primary text-white;
 }
 
 .primary::before {
-    background: #D25A15;
+  background: #d25a15;
 }
-button.primary:active::before  {
-    box-shadow: 0 0 0 2px #D25A15, 0 0 #ffe3e2;
+button.primary:active::before {
+  box-shadow: 0 0 0 2px #d25a15, 0 0 #ffe3e2;
 }
 
-.secondary{
-    @apply bg-[#D1D1D1] text-black;
+.secondary {
+  @apply bg-[#D1D1D1] text-black;
 }
 
 .secondary::before {
-    background: #A5A5A5;
+  background: #a5a5a5;
 }
-button.secondary:active::before  {
-    box-shadow: 0 0 0 2px #A5A5A5, 0 0 #ffe3e2;
+button.secondary:active::before {
+  box-shadow: 0 0 0 2px #a5a5a5, 0 0 #ffe3e2;
+}
+
+.popoverArrow {
+  fill: #E6F5FF;
+  filter: drop-shadow(0 0 3px #E6F5FF);
+  clip-path: inset(0 -10px -10px -10px);
 }

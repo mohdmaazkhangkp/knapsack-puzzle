@@ -12,6 +12,8 @@ import ruleImg from "../assets/rule.png";
 import { useNavigate } from "react-router-dom";
 import { RouterPath } from "./pagesData";
 import toast, { Toaster } from "react-hot-toast";
+import PopoverComponent from "../components/Popover";
+import { hints, rules } from "../utils/constants";
 
 const Play = () => {
   const [resetTrigger, setResetTrigger] = useState(false);
@@ -119,17 +121,23 @@ const Play = () => {
       </div>
       <div className="flex flex-col gap-8 absolute right-2 top-0 bottom-0 my-auto  h-full items-center justify-center">
         {" "}
-        <button className="border-2 border-white rounded-[12px] gap-1 bg-blue flex flex-col items-center justify-center w-[64px] h-[65px]">
-          <img className="w-6" src={hintImg} />
-          <p className="text-white font-semibold text-[12px]">Hints</p>
-        </button>
-        <button className="border-2 border-white rounded-[12px] gap-1 bg-blue flex flex-col items-center justify-center w-[64px] h-[65px]">
-          <img className="w-6" src={ruleImg} />
-          <p className="text-white font-semibold text-[12px]">Rules</p>
-        </button>
+        <PopoverComponent steps={hints} title="Hints">
+          <button className="border-2 border-white rounded-[12px] gap-1 bg-blue flex flex-col items-center justify-center w-[64px] h-[65px]">
+            <img className="w-6" src={hintImg} />
+            <p className="text-white font-semibold text-[12px]">Hints</p>
+          </button>
+        </PopoverComponent>
+        <PopoverComponent steps={rules} title="Rules">
+          <button className="border-2 border-white rounded-[12px] gap-1 bg-blue flex flex-col items-center justify-center w-[64px] h-[65px]">
+            <img className="w-6" src={ruleImg} />
+            <p className="text-white font-semibold text-[12px]">Rules</p>
+          </button>
+        </PopoverComponent>
       </div>
       <DndProvider backend={HTML5Backend}>
-        <h2 className="text-[2rem] text-center font-balooThambi">Knapsack puzzle</h2>
+        <h2 className="text-[2rem] text-center font-balooThambi">
+          Knapsack puzzle
+        </h2>
         <p className="text-center font-medium text-lg font-balooThambi2">
           Maximize the value of Gems you want to carry within your bag weight
           limit
