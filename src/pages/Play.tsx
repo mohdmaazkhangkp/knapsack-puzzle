@@ -129,7 +129,7 @@ const Play = () => {
         </button>
       </div>
       <DndProvider backend={HTML5Backend}>
-        <h2 className="text-[2rem] text-center">Knapsack puzzle</h2>
+        <h2 className="text-[2rem] text-center font-balooThambi">Knapsack puzzle</h2>
         <p className="text-center font-medium text-lg font-balooThambi2">
           Maximize the value of Gems you want to carry within your bag weight
           limit

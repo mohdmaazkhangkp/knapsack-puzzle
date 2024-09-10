@@ -9,6 +9,7 @@ export default {
       fontFamily: {
         balooThambi2: ['Baloo Thambi 2', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
+        balooThambi: ['balooThambi', 'sans-serif'],
       },
       colors:{
         primary: "#F86509",

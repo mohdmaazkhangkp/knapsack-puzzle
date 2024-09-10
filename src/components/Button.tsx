@@ -14,7 +14,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      className={`button-10 primary ${
+      className={`button-10 primary font-balooThambi ${
         size === "medium" ? "w-[132px]" : "w-[100px]"
       } ${variant}`}
       role="button"

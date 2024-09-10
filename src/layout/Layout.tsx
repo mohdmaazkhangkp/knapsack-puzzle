@@ -4,7 +4,7 @@ import bg from "../assets/bg.webp";
 const Layout = ({ children }: { children: ReactNode }) => {
   return (
     <div
-      className="w-full min-h-screen flex flex-col"
+      className="w-full min-h-screen flex flex-col font-balooThambi2"
       style={{
         backgroundImage: `url(${bg})`,
         backgroundSize: "cover",

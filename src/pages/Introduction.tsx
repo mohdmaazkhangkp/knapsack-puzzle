@@ -32,8 +32,8 @@ const Introduction = () => {
     image: string;
   }) => {
     return (
-      <div className="">
-        <p className="font-medium text-lg font-roboto text-center mb-1">
+      <div className="flex flex-col justify-end">
+        <p className="font-medium text-lg font-roboto text-center mb-1 max-w-md mx-auto">
           {text}
         </p>
         <img src={image} className="" />
@@ -48,7 +48,7 @@ const Introduction = () => {
           Exit
         </Button>
       </div>
-      <h2 className="text-[2rem] text-center">Knapsack puzzle</h2>
+      <h2 className="text-[2rem] text-center font-balooThambi">Knapsack puzzle</h2>
       <p className="text-center font-medium text-lg font-balooThambi2">
         Maximize the value of Gems you want to carry within your bag weight
         limit
